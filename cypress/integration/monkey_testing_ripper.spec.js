@@ -12,8 +12,10 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 };
 
+var arr = [randomEvent, randomClick, randomInput, randomButton];
+
 function randomEvent(){
-	var eventNumber = getRandomInt(1, 4);
+	var eventNumber = getRandomInt(0, arr.length);
 	if(eventNumber == 1){
 		randomClick(5);
 	}
