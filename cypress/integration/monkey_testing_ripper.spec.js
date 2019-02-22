@@ -14,7 +14,6 @@ function getRandomInt(min, max) {
 
 function randomEvent(){
 	var eventNumber = getRandomInt(1, 4);
-	var completed = 0;
 	if(eventNumber == 1){
 		randomClick(5);
 	}
@@ -29,7 +28,6 @@ function randomEvent(){
 }
 
 function randomClick(monkeysLeft) {
-
     var monkeysLeft = monkeysLeft;
     if(monkeysLeft > 0) {
         cy.get('a').then($links => {
