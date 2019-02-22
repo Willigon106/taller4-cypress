@@ -3,6 +3,7 @@ describe('Los estudiantes under monkeys', function() {
         cy.visit('https://losestudiantes.co');
         cy.contains('Cerrar').click();
         cy.wait(1000);
+	cy.randomEvent();
     })
 })
 
